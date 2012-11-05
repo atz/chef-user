@@ -19,6 +19,8 @@
 # limitations under the License.
 #
 
+default['user']={}  # initialize top level
+
 case platform
 when 'debian','ubuntu','redhat','centos','amazon','scientific','fedora','freebsd','suse'
   default['user']['home_root']      = "/home"
